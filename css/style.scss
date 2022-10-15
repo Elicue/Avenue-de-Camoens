@@ -9,6 +9,7 @@
   color: color(noir);
   // cursor: none;
     // border: 2px solid red;
+    overflow-x: hidden;
 }
 
 $colors :(
@@ -202,6 +203,7 @@ main {
               flex-direction: column;
               text-transform: uppercase;
               align-items: flex-start;
+              margin-left: 10px;
 
               .fond {
                 border: $border color(noir) solid;
@@ -218,7 +220,7 @@ main {
                 border: $border color(noir) solid;
                 background-color: color(primary);
                 text-transform: uppercase;
-                font-size: 30px;
+                font-size: 25px;
                 height: 100%;
                 width: 100%;
               }
@@ -365,6 +367,156 @@ main {
             }
 
           }
+        }
+      }
+    }
+  }
+
+  .centre {
+    height: 100vh;
+    width: 100%;
+    border-top: $border color(noir) solid;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      width: 60%;
+      border-right: $border color(noir) solid;
+      display: flex;
+      flex-direction: row;
+
+      .gauche {
+        height: 100%;
+        width: 55%;
+        display: flex;
+        align-items: flex-end;
+
+        .content {
+          background-image: url(../images/f-resize.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 90%;
+          width: 100%;
+        }
+      }
+
+      .droite {
+        width: 40%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          height: 60%;
+          justify-content: space-between;
+          width: 90%;
+          margin: auto;
+
+          .titre {
+            h3 {
+              font-size: 65px;
+              -webkit-text-stroke: $border color(noir);
+              font-weight: 900;
+              text-transform: uppercase;
+  
+              span {
+                color: color(primary);
+              }
+            }
+          }
+  
+          .txt {
+            h2 {
+              font-size: 25px;
+              width: 70%;
+              margin-bottom: 20px;
+            }
+          }
+
+          .cta {
+            width: 55%;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            align-items: flex-start;
+            margin-left: 10px;
+
+            .fond {
+              border: $border color(noir) solid;
+              background-color: #fff;
+              font-size: 30px;
+              height: 60px;
+              width: 12%;
+              position: absolute;
+              z-index: -1;
+              margin: -10px 0 0 -10px;
+            }
+
+            button {
+              border: $border color(noir) solid;
+              background-color: color(primary);
+              text-transform: uppercase;
+              font-size: 25px;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-right: -8%;
+
+      .haut {
+        width: 80%;
+        height: 70%;
+        border-bottom: color(noir) solid $border;
+
+        .content {
+          width: 70%;
+          height: 100%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          img {
+            border-radius: 50% 50% 0 0;
+            width: 100%;
+            height: 70%;
+          }
+
+          p {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .bas {
+        height: 30%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .cercle {
+          width: 40%;
+          height: 75%;
+          background-color: color(secondary);
+          border-radius: 50%;
         }
       }
     }
