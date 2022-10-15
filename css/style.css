@@ -31,19 +31,30 @@
   height: 60%;
 }
 .sidebar .titre {
-  width: 100%;
-  height: 50%;
+  text-align: center;
+  width: 300%;
+  height: 35%;
+  transform: rotate(-90deg);
+  margin-bottom: 100px;
 }
-.sidebar .burger {
+.sidebar .titre h3 {
+  width: 100%;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.sidebar .map {
   display: flex;
   width: 100%;
   height: 20%;
   align-items: flex-end;
 }
-.sidebar .burger .fond {
+.sidebar .map .fond {
   background-color: #191919;
   width: 100%;
   height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -52,7 +63,7 @@ main {
   flex-direction: column;
   border: none;
 }
-main .infos {
+main .haut .infos {
   display: flex;
   width: 100%;
   height: 6vh;
@@ -60,27 +71,27 @@ main .infos {
   justify-content: flex-end;
   border-bottom: 2px solid #191919;
 }
-main .infos .content {
+main .haut .infos .content {
   display: flex;
   width: 92%;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
 }
-main .infos .content .marquee {
+main .haut .infos .content .marquee {
   width: 92%;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
 }
-main .infos .content .marquee span {
+main .haut .infos .content .marquee span {
   display: inline-block;
   padding-left: 100%;
   -webkit-animation: marquee 40s linear infinite;
           animation: marquee 40s linear infinite;
 }
-main .infos .content .marquee2 span {
+main .haut .infos .content .marquee2 span {
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
@@ -100,17 +111,17 @@ main .infos .content .marquee2 span {
     transform: translate(-100%, 0);
   }
 }
-main .content {
+main .haut .content {
   margin-left: 8%;
   display: flex;
   flex-direction: row;
 }
-main .content .gauche {
+main .haut .content .gauche {
   width: 55%;
   height: 94vh;
   border-right: #191919 2px solid;
 }
-main .content .gauche .haut {
+main .haut .content .gauche .haut {
   display: flex;
   flex-direction: column;
   height: 60vh;
@@ -118,7 +129,7 @@ main .content .gauche .haut {
   border-bottom: #191919 2px solid;
   align-items: center;
 }
-main .content .gauche .haut .content {
+main .haut .content .gauche .haut .content {
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -126,28 +137,28 @@ main .content .gauche .haut .content {
   margin: auto;
   justify-content: space-around;
 }
-main .content .gauche .haut .content .titre {
+main .haut .content .gauche .haut .content .titre {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-main .content .gauche .haut .content .titre h1 {
+main .haut .content .gauche .haut .content .titre h1 {
   font-size: 75px;
   -webkit-text-stroke: 2px #191919;
   font-weight: 900;
 }
-main .content .gauche .haut .content .titre h1 span {
+main .haut .content .gauche .haut .content .titre h1 span {
   color: #D3DFF9;
 }
-main .content .gauche .haut .content .titre h1:nth-child(2) span {
+main .haut .content .gauche .haut .content .titre h1:nth-child(2) span {
   color: #fff;
 }
-main .content .gauche .haut .content .titre h1:nth-child(3) span {
+main .haut .content .gauche .haut .content .titre h1:nth-child(3) span {
   color: #626772;
 }
-main .content .gauche .haut .content .cta {
+main .haut .content .gauche .haut .content .cta {
   width: 35%;
   height: 60px;
   display: flex;
@@ -155,7 +166,7 @@ main .content .gauche .haut .content .cta {
   text-transform: uppercase;
   align-items: flex-start;
 }
-main .content .gauche .haut .content .cta .fond {
+main .haut .content .gauche .haut .content .cta .fond {
   border: 2px #191919 solid;
   background-color: #fff;
   font-size: 30px;
@@ -165,7 +176,7 @@ main .content .gauche .haut .content .cta .fond {
   z-index: -1;
   margin: -10px 0 0 -10px;
 }
-main .content .gauche .haut .content .cta button {
+main .haut .content .gauche .haut .content .cta button {
   border: 2px #191919 solid;
   background-color: #D3DFF9;
   text-transform: uppercase;
@@ -173,37 +184,37 @@ main .content .gauche .haut .content .cta button {
   height: 100%;
   width: 100%;
 }
-main .content .gauche .bas {
+main .haut .content .gauche .bas {
   height: 34vh;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-main .content .gauche .bas .gauche {
+main .haut .content .gauche .bas .gauche {
   display: flex;
   height: 100%;
   width: 40%;
   align-items: center;
   justify-content: center;
 }
-main .content .gauche .bas .droite {
+main .haut .content .gauche .bas .droite {
   height: 100%;
   width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-main .content .gauche .bas .droite .left {
+main .haut .content .gauche .bas .droite .left {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
 }
-main .content .gauche .bas .droite .left img {
+main .haut .content .gauche .bas .droite .left img {
   width: 180px;
   height: 220px;
 }
-main .content .gauche .bas .droite .right {
+main .haut .content .gauche .bas .droite .right {
   display: flex;
   justify-content: center;
   width: 50%;
@@ -211,24 +222,25 @@ main .content .gauche .bas .droite .right {
   flex-direction: column;
   justify-content: space-between;
 }
-main .content .gauche .bas .droite .right .titre {
+main .haut .content .gauche .bas .droite .right .titre {
   font-size: 20px;
   display: flex;
   align-items: flex-start;
 }
-main .content .gauche .bas .droite .right .content {
+main .haut .content .gauche .bas .droite .right .content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0;
   height: 80%;
+  width: 85%;
 }
-main .content .gauche .bas .droite .right .content .cta {
+main .haut .content .gauche .bas .droite .right .content .cta {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-main .content .gauche .bas .droite .right .content .cta a {
+main .haut .content .gauche .bas .droite .right .content .cta a {
   color: #191919;
   text-decoration: none;
   text-transform: uppercase;
@@ -236,38 +248,38 @@ main .content .gauche .bas .droite .right .content .cta a {
   display: flex;
   align-items: center;
 }
-main .content .gauche .bas .droite .right .content .cta a svg {
+main .haut .content .gauche .bas .droite .right .content .cta a svg {
   margin-left: 20px;
 }
-main .content .droite {
+main .haut .content .droite {
   width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
 }
-main .content .droite .content-bg {
+main .haut .content .droite .content-bg {
   display: flex;
   position: relative;
   width: 85%;
-  height: 90%;
+  height: 93%;
   background-image: url(../images/f-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: flex-end;
   justify-content: flex-end;
 }
-main .content .droite .content-bg .fond {
+main .haut .content .droite .content-bg .fond {
   display: flex;
   flex-direction: column;
   background-color: #D3DFF9;
   width: 50%;
   height: 35%;
 }
-main .content .droite .content-bg .fond .space {
+main .haut .content .droite .content-bg .fond .space {
   height: 30%;
 }
-main .content .droite .content-bg .fond .content {
+main .haut .content .droite .content-bg .fond .content {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -275,18 +287,19 @@ main .content .droite .content-bg .fond .content {
   height: 50%;
   justify-content: space-between;
 }
-main .content .droite .content-bg .fond .content .titre {
+main .haut .content .droite .content-bg .fond .content .titre {
   font-size: 10px;
 }
-main .content .droite .content-bg .fond .content .txt {
+main .haut .content .droite .content-bg .fond .content .txt {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-main .content .droite .content-bg .fond .content .txt p {
+main .haut .content .droite .content-bg .fond .content .txt p {
   width: 70%;
   font-size: 15px;
 }
-main .content .droite .content-bg .fond .content .txt svg {
+main .haut .content .droite .content-bg .fond .content .txt svg {
   margin-left: 10px;
+  transform: rotate(90deg);
 }/*# sourceMappingURL=style.css.map */
