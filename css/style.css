@@ -102,6 +102,8 @@ main .infos .content .marquee2 span {
 }
 main .content {
   margin-left: 8%;
+  display: flex;
+  flex-direction: row;
 }
 main .content .gauche {
   width: 55%;
@@ -115,26 +117,26 @@ main .content .gauche .haut {
   width: 100%;
   border-bottom: #191919 2px solid;
   align-items: center;
-  justify-content: space-around;
-  border: red 2px solid;
 }
 main .content .gauche .haut .content {
   display: flex;
   flex-direction: column;
   width: 90%;
-  border: red 2px solid;
+  height: 100%;
   margin: auto;
+  justify-content: space-around;
 }
 main .content .gauche .haut .content .titre {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  border: red 2px solid;
+  letter-spacing: 2px;
 }
 main .content .gauche .haut .content .titre h1 {
-  font-size: 70px;
+  font-size: 75px;
   -webkit-text-stroke: 2px #191919;
+  font-weight: 900;
 }
 main .content .gauche .haut .content .titre h1 span {
   color: #D3DFF9;
@@ -143,16 +145,33 @@ main .content .gauche .haut .content .titre h1:nth-child(2) span {
   color: #fff;
 }
 main .content .gauche .haut .content .titre h1:nth-child(3) span {
-  color: #545D72;
+  color: #626772;
 }
 main .content .gauche .haut .content .cta {
-  width: 40%;
-  height: 70px;
+  width: 35%;
+  height: 60px;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  border: red 2px solid;
   align-items: flex-start;
+}
+main .content .gauche .haut .content .cta .fond {
+  border: 2px #191919 solid;
+  background-color: #fff;
+  font-size: 30px;
+  height: 60px;
+  width: 15.5%;
+  position: absolute;
+  z-index: -1;
+  margin: -10px 0 0 -10px;
+}
+main .content .gauche .haut .content .cta button {
+  border: 2px #191919 solid;
+  background-color: #D3DFF9;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
 }
 main .content .gauche .bas {
   height: 34vh;
@@ -161,10 +180,113 @@ main .content .gauche .bas {
   flex-direction: row;
 }
 main .content .gauche .bas .gauche {
+  display: flex;
   height: 100%;
-  width: 45%;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
 }
 main .content .gauche .bas .droite {
   height: 100%;
-  width: 55%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .content .gauche .bas .droite .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+main .content .gauche .bas .droite .left img {
+  width: 180px;
+  height: 220px;
+}
+main .content .gauche .bas .droite .right {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .content .gauche .bas .droite .right .titre {
+  font-size: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+main .content .gauche .bas .droite .right .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  height: 80%;
+}
+main .content .gauche .bas .droite .right .content .cta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main .content .gauche .bas .droite .right .content .cta a {
+  color: #191919;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+main .content .gauche .bas .droite .right .content .cta a svg {
+  margin-left: 20px;
+}
+main .content .droite {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+main .content .droite .content-bg {
+  display: flex;
+  position: relative;
+  width: 85%;
+  height: 90%;
+  background-image: url(../images/f-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+main .content .droite .content-bg .fond {
+  display: flex;
+  flex-direction: column;
+  background-color: #D3DFF9;
+  width: 50%;
+  height: 35%;
+}
+main .content .droite .content-bg .fond .space {
+  height: 30%;
+}
+main .content .droite .content-bg .fond .content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 85%;
+  height: 50%;
+  justify-content: space-between;
+}
+main .content .droite .content-bg .fond .content .titre {
+  font-size: 10px;
+}
+main .content .droite .content-bg .fond .content .txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .content .droite .content-bg .fond .content .txt p {
+  width: 70%;
+  font-size: 15px;
+}
+main .content .droite .content-bg .fond .content .txt svg {
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
