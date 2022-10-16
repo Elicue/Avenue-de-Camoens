@@ -179,9 +179,9 @@ section .boite:nth-child(7) {
     width: 93%;
     margin-left: 7%;
     display: grid;
-    grid-template-areas: "a a a a a d d d d" "a a a a a d d d d" "b b c c c d d d d" "e e e e e e f f f" "e e e e e e g g g" "e e e e e e g g g" "e e e e e e g g g";
+    grid-template-areas: "a a a a a a d d d d" "a a a a a a d d d d" "a a a a a a d d d d" "a a a a a a d d d d" "b b c c c c d d d d" "b b c c c c d d d d" "e e e e e e e f f f" "e e e e e e e f f f" "e e e e e e e g g g" "e e e e e e e g g g" "e e e e e e e g g g";
     grid-auto-columns: 1fr;
-    height: 190vh;
+    height: 195vh;
   }
   section .boite {
     grid-area: var(--grid-area);
@@ -791,7 +791,7 @@ main .boite:nth-child(7) {
     align-items: flex-end;
   }
   main .boite:nth-child(5) .gauche .content {
-    background-image: url(../images/f-resize.png);
+    background-image: url(../images/f-rsize.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90%;
@@ -859,7 +859,7 @@ main .boite:nth-child(7) {
     height: 100%;
   }
   main .boite:nth-child(6) .content {
-    width: 60%;
+    width: 50%;
     height: 90%;
     margin: auto;
     display: flex;
@@ -870,7 +870,6 @@ main .boite:nth-child(7) {
   main .boite:nth-child(6) .content img {
     border-radius: 50% 50% 0 0;
     width: 100%;
-    height: 60%;
   }
   main .boite:nth-child(6) .content .content {
     display: flex;
@@ -891,9 +890,13 @@ main .boite:nth-child(7) {
     justify-content: center;
   }
   main .boite:nth-child(7) .cercle {
-    width: 35%;
+    width: 45%;
     height: 65%;
     background-color: #626772;
     border-radius: 50%;
+  }
+  main .boite:nth-child(7) .cercle img {
+    width: 100%;
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
