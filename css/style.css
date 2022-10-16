@@ -383,13 +383,21 @@ main .boite:nth-child(1) .content .cta .fond {
   z-index: -1;
   margin: -10px 0 0 -10px;
 }
-main .boite:nth-child(1) .content .cta button {
+main .boite:nth-child(1) .content .cta a {
+  display: flex;
   border: 2px #191919 solid;
   background-color: #D3DFF9;
-  text-transform: uppercase;
-  font-size: 15px;
   height: 100%;
   width: 100%;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+main .boite:nth-child(1) .content .cta a button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 main .boite:nth-child(2) {
   display: flex;
@@ -525,7 +533,7 @@ main .boite:nth-child(5) .gauche {
   align-items: flex-end;
 }
 main .boite:nth-child(5) .gauche .content {
-  background-image: url(../images/f-resize.png);
+  background-image: url(../images/f-rsize.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90%;
@@ -652,13 +660,15 @@ main .boite:nth-child(7) {
     z-index: -1;
     margin: -10px 0 0 -10px;
   }
-  main .boite:nth-child(1) .content .cta button {
-    border: 2px #191919 solid;
+  main .boite:nth-child(1) .content .cta a {
     background-color: #D3DFF9;
     text-transform: uppercase;
     font-size: 25px;
     height: 100%;
     width: 100%;
+  }
+  main .boite:nth-child(1) .content .cta a button {
+    font-size: 25px;
   }
   main .boite:nth-child(2) {
     display: flex;
@@ -846,13 +856,21 @@ main .boite:nth-child(7) {
     z-index: -1;
     margin: -10px 0 0 -10px;
   }
-  main .boite:nth-child(5) .droite .content .cta button {
+  main .boite:nth-child(5) .droite .content .cta a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     border: 2px #191919 solid;
     background-color: #D3DFF9;
-    text-transform: uppercase;
-    font-size: 25px;
     height: 100%;
     width: 100%;
+  }
+  main .boite:nth-child(5) .droite .content .cta a button {
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
   }
   main .boite:nth-child(6) {
     width: 100%;
