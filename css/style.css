@@ -85,7 +85,7 @@
 }
 .sidebar .titre h3 {
   width: 100%;
-  font-size: 15px;
+  font-size: 20px;
   text-transform: capitalize;
 }
 @media (min-width: 800px) {
@@ -108,6 +108,33 @@
     height: 40%;
     align-items: flex-end;
   }
+}
+.sidebar .jsp {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+.sidebar .jsp a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.sidebar .jsp a button {
+  border: 2px solid #191919;
+  padding: 0.5em 1em;
+  background-color: #D3DFF9;
+  text-transform: uppercase;
+  border-radius: 50%;
+  height: 50%;
+  width: 60%;
+  cursor: pointer;
+}
+.sidebar .jsp a button ion-icon {
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -267,8 +294,8 @@ section .boite:nth-child(7) {
 .infos .content .marquee span {
   display: inline-block;
   padding-left: 100%;
-  -webkit-animation: marquee 80s linear infinite;
-          animation: marquee 80s linear infinite;
+  -webkit-animation: marquee 40s linear infinite;
+          animation: marquee 40s linear infinite;
 }
 @media (min-width: 800px) {
   .infos .content .marquee span {
