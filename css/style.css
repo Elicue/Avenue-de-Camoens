@@ -99,20 +99,7 @@
   display: flex;
   width: 20%;
   height: 100%;
-  align-items: flex-end;
-}
-@media (min-width: 800px) {
-  .sidebar .jsp {
-    display: flex;
-    width: 100%;
-    height: 40%;
-    align-items: flex-end;
-  }
-}
-.sidebar .jsp {
-  width: 100%;
-  height: 20%;
-  display: flex;
+  align-items: center;
   justify-content: center;
 }
 .sidebar .jsp a {
@@ -128,13 +115,42 @@
   background-color: #D3DFF9;
   text-transform: uppercase;
   border-radius: 50%;
-  height: 50%;
+  height: 60%;
   width: 60%;
   cursor: pointer;
 }
 .sidebar .jsp a button ion-icon {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 800px) {
+  .sidebar .jsp {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar .jsp a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .sidebar .jsp a button {
+    border: 2px solid #191919;
+    padding: 0.5em 1em;
+    background-color: #D3DFF9;
+    text-transform: uppercase;
+    border-radius: 50%;
+    height: 50%;
+    width: 60%;
+    cursor: pointer;
+  }
+  .sidebar .jsp a button ion-icon {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 section {
